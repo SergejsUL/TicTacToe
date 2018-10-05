@@ -101,15 +101,20 @@
         android:layout_above="@+id/table1"
         android:layout_centerInParent="true"
         android:textColor="@color/textColor"
-        android:text="Game"
-        android:textSize="20sp" />
+        android:text="@string/x_turn"
+        android:textSize="20sp"
+        android:layout_margin="9dp"
+        android:textStyle="bold"
+        android:id="@+id/games_state_text_view"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignRight="@id/table1"
         android:layout_below="@id/table1"
-        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:padding="10dp"
         android:text="@string/new_game"
         android:textSize="10sp"
-        android:padding="10dp"
-        android:layout_margin="10dp"/>
+        android:onClick="pressedNewGame"/>
 </RelativeLayout>

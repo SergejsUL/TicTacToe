@@ -18,12 +18,19 @@ public class MainActivity extends AppCompatActivity {
         mGame = new TicTacToeGame(this);
     }
 
-    public void pressSquare (View view){
-        String tagAsString =view.getTag().toString();
+    public void pressSquare(View view) {
+        String tagAsString = view.getTag().toString();
         int tagAsInt = Integer.parseInt(tagAsString);
         //Log.d("TTT ","You pressed index " + tagAsInt);
         //Toast.makeText(this,"You pressed" + tagAsInt,Toast.LENGTH_SHORT).show();
 
 
     }
+
+    public void pressedNewGame(View view) {
+        //Toast.makeText(this, "New Game", Toast.LENGTH_SHORT).show();
+
+
+    }
+
 }
